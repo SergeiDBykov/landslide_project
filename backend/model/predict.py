@@ -11,7 +11,7 @@ pd.set_option('display.max_columns', None)
 worldmap = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
 
 
-df = pd.read_csv('../data/Global_Landslide_Catalog_Export.csv')
+df = pd.read_csv('./data/Global_Landslide_Catalog_Export.csv')
 df['event_date'] = pd.to_datetime(df['event_date'])
 df['month'] = df['event_date'].dt.month
 df['year'] = df['event_date'].dt.year

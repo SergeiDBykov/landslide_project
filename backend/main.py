@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from predict import predict
+from backend.model.predict import predict
 
 app = FastAPI()
 
@@ -15,4 +15,5 @@ async def say_hello(name: str):
 
 @app.post("/test")
 async def hello_world():
-    return {"message": f"Hello World"}
+    return {"message": f"It works!"}
+
