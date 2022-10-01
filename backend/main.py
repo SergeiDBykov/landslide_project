@@ -13,7 +13,8 @@ async def root():
 async def say_hello(name: str):
     return {"message": f"Hello {name}"}
 
-@app.post("/test")
-async def hello_world():
-    return {"message": f"It works!"}
+@app.post("/predict")
+async def get_prediction(lat: float = 0, lon: float = 10, month: int = 0):
+    risk, fig = predict(lon, lat, month)
+    return {"message": f"Success", "risk": risk, "fig": fig}
 
