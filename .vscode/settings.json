@@ -1,0 +1,26 @@
+{
+    "jupyter.kernels.filter": [
+        {
+            "path": "/Users/s.bykov/opt/anaconda3/bin/python",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/bin/python",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/bin/python3",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/local/bin/python3",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/Users/s.bykov/.conda/envs/pythonProject/bin/python",
+            "type": "pythonEnvironment"
+        }
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
+}
